@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="_js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="_js/vegas/jquery.vegas.js"></script>
+<link rel="stylesheet" type="text/css" href="_js/vegas/jquery.vegas.css" />
+<title>In Memoriam - Charles Holter</title>
+<script type="text/javascript">
+$(document).ready(function() {
+	$( function() {
+		$.vegas({
+		src:'_img/bg.jpg'
+		});
+		
+		$.vegas('overlay', {
+		src:'_js/vegas/overlays/02.png',
+		opacity:.5
+		});
+    });
+	
+	
+});
+</script>
+
+
+</head>
+
+<body>
+<form method="post" id="form">  
+    <table>  
+        <tr>  
+            <td><label>User</label></td>  
+            <td><input class="text user" id="nick" type="text" MAXLENGTH="25" /></td>  
+        </tr>  
+        <tr>  
+            <td><label>Message</label></td>  
+            <td><input class="text" id="message" type="text" MAXLENGTH="255" /></td>  
+        </tr>  
+        <tr>  
+            <td></td>  
+            <td><input id="send" type="submit" value="Shout it!" /></td>  
+        </tr>  
+    </table>  
+</form>
+
+<div id="container">  
+    <ul class="menu">  
+        <li>Shoutbox</li>  
+    </ul>  
+    <span class="clear"></span>  
+    <div class="content">  
+        <h1>Latest Messages</h1>  
+        <div id="loading"><img src="css/images/loading.gif" alt="Loading..." /></div>  
+        <ul>  
+        <ul>  
+    </div>  
+</div>
+
+
+</body>
+
+</html>

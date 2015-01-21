@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>In Memoriam - Charles Holter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="_js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="_js/vegas/jquery.vegas.js"></script>
+<script type="text/javascript" src="shoutbox.js"></script>
+<link rel="stylesheet" type="text/css" href="_js/vegas/jquery.vegas.css" />
+<link rel="stylesheet" type="text/css" href="_css/shoutbox.css" />
+<script type="text/javascript">
+$(document).ready(function() {
+	$( function() {
+		$.vegas({
+		src:'_img/bg.jpg'
+		});
+		$.vegas('overlay', {
+		src:'_js/vegas/overlays/02.png',
+		opacity:.5
+		});
+    });
+});
+</script>
+</head>
+
+<body>
+
+<img src="_img/quote.png" id="quote"/>
+
+<div id="shoutbox-container">
+    <form method="post" id="form">  
+        <table>  
+        	<tr>  
+                <td class="table-title">Please feel free to use this space to share your thoughts, feelings, stories, and everything else about Chuck.</td>  
+            </tr>
+            <tr>  
+                <td><label>Your Name</label></td>  
+            </tr>
+            <tr>
+                <td><input class="text user" id="nick" type="text" MAXLENGTH="25" /></td>  
+            </tr>  
+            <tr>  
+                <td><label>Your Message</label></td>  
+            </tr>
+            <tr>
+                <td><textarea id="message" MAXLENGTH="255"></textarea></td>  
+            </tr>  
+            <tr>  
+                <td><input id="send" type="submit" value="Share Your Thoughts" /></td>  
+            </tr>  
+        </table>  
+    </form>
+    
+    <div id="container">  
+        <div class="content">  
+            <div><img src="_img/lm.png" /></div> 
+            <div id="loading"><img src="css/images/loading.gif" alt="Loading..." /></div>  
+            <ul>  
+            <ul>  
+        </div>  
+    </div>
+</div>
+
+
+
+
+</body>
+
+
+
+</html>
+
